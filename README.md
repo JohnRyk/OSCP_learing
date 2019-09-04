@@ -232,6 +232,13 @@ nmap -sV -sC -p 21,80 -oA scans/nmap-scripts 10.10.10.5
 
 ### 常用命令
 
+#### 使用 pyinstaller 把py脚本打包成 .exe 文件
+```
+需要 pyinstaller 和 pywin32
+
+```
+
+
 #### 编译 windows 执行程序
 
 ```
