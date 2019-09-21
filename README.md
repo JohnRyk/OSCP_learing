@@ -281,7 +281,7 @@ nmap -sV -sC -p 21,80 -oA scans/nmap-scripts 10.10.10.5
 #### NSE脚本扫描
 
 ```
-https://github.com/JohnRyk/FluentNmap
+* [FluentNamp](https://github.com/JohnRyk/FluentNmap)
 ```
 
 
