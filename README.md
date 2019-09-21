@@ -1,7 +1,7 @@
 # OSCP learning
 
 
-## 资料链接
+## Reference
 
 * [windows exploit](https://github.com/abatchy17/WindowsExploits)
 * [OSCP like vulnhub](https://medium.com/@andr3w_hilton/oscp-training-vms-hosted-on-vulnhub-com-22fa061bf6a1)
@@ -16,7 +16,7 @@
 
 ## cheetsheet 
 
-### 信息枚举
+### Enumerate
 
 * droopescan
 
@@ -159,7 +159,7 @@ awk 'BEGIN {
 ```
 [more](https://xax007.github.io/2019-01-13-post-exploitation-file-transfer-tips/)
 
-### 反弹 shell
+### Pop shell
 
 #### smbclient
 
