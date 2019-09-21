@@ -267,6 +267,10 @@ nmap --min-rtt-timeout=1 -p- -A 10.1.1.1
 ```
 
 ```
+nmap --min-rtt-timeout=1 -p- -sU -sV 10.1.1.1
+```
+
+```
 nmap -sT -p- --min-rate 10000 -oA scans/nmap-alltcp 10.10.10.5
 ```
 
