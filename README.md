@@ -8,7 +8,7 @@
 * [OSCP official report](https://www.offensive-security.com/pwk-online/PWK-Example-Report-v1.pdf)
 * [smb enumerate](https://xax007.github.io/2019-01-12-smb-enumeration-checklist/)
 * [pentestmonkey reverse shell](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)
-* [python pty shell]()
+* [python pty shell](https://github.com/infodox/python-pty-shells)
 * [linux priv check](https://raw.githubusercontent.com/neal1991/htb/62d6df2d86669a2957418e74c3a79a535297f386/SolidState/linuxprivchecker.py)
 * [upgrade reverse shell](https://blog.ropnop.com/upgrading-simple-shells-to-fully-interactive-ttys/)
 
