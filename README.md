@@ -39,7 +39,7 @@ cewl -d 2 -m 5 -w docswords.txt https://example.com
 
 #### 用户写入 passwd
 
-```
+```shell
 # generate password firstly
 openssl passwd -1
 
