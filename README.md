@@ -316,6 +316,6 @@ Powershell.exe -NoProfile -NonInteractive -WindowStyle Hidden -ExecutionPolicy B
 ```
 
 #### common ascii - hex  
-```
-
+```shell
+	man ascii
 ```
