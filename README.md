@@ -287,10 +287,18 @@ nmap -sV -sC -p 21,80 -oA scans/nmap-scripts 10.10.10.5
 
 ### 杂项
 
-#### 使用 pyinstaller 把py脚本打包成 .exe 文件
+#### python ASCII to exe or elf
 ```
 # 需要安装 pyinstaller 和 pywin32
+	...
+```
 
+```
+# Python3:
+	python3 -m pip install pyinstaller
+	pyinstaller -F test.py				# -F (one single file)
+	
+# 在x86windows环境下将生产x86的exe, 在x86_64的linux环境下会生产x86_64的ELF，目标文件位于dist文件夹下。
 ```
 #### Cross Compile
 
